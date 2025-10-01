@@ -1,0 +1,95 @@
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Tweet Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="stars" id="stars">
+    <div class="star" style="left: 52.4803vw; top: 67.3111vh; animation-duration: 6.71367s;"></div>
+    <div class="star" style="left: 79.8007vw; top: 29.8644vh; animation-duration: 3.25035s;"></div>
+    <div class="star" style="left: 81.7326vw; top: 5.17713vh; animation-duration: 5.41532s;"></div>
+    <div class="star" style="left: 87.1268vw; top: 15.7718vh; animation-duration: 6.54182s;"></div>
+    <div class="star" style="left: 1.44108vw; top: 69.6906vh; animation-duration: 4.54986s;"></div>
+    <div class="star" style="left: 37.8631vw; top: 55.4997vh; animation-duration: 4.50319s;"></div>
+    <div class="star" style="left: 46.7024vw; top: 49.4279vh; animation-duration: 6.35147s;"></div>
+    <div class="star" style="left: 5.65991vw; top: 72.2815vh; animation-duration: 5.11005s;"></div>
+    <div class="star" style="left: 6.33561vw; top: 4.17076vh; animation-duration: 6.3154s;"></div>
+    <div class="star" style="left: 59.8054vw; top: 87.3367vh; animation-duration: 5.71554s;"></div>
+    <div class="star" style="left: 97.6313vw; top: 59.9631vh; animation-duration: 4.90144s;"></div>
+    <div class="star" style="left: 30.5613vw; top: 90.6433vh; animation-duration: 3.85604s;"></div>
+    <div class="star" style="left: 13.8028vw; top: 34.9169vh; animation-duration: 3.96232s;"></div>
+    <div class="star" style="left: 43.6681vw; top: 84.4877vh; animation-duration: 5.74345s;"></div>
+    <div class="star" style="left: 20.6766vw; top: 80.2809vh; animation-duration: 6.49794s;"></div>
+    <div class="star" style="left: 15.9617vw; top: 11.337vh; animation-duration: 3.62287s;"></div>
+    <div class="star" style="left: 51.7787vw; top: 0.303205vh; animation-duration: 3.56236s;"></div>
+    <div class="star" style="left: 48.9649vw; top: 43.6202vh; animation-duration: 3.60604s;"></div>
+    <div class="star" style="left: 31.5724vw; top: 72.0247vh; animation-duration: 6.7695s;"></div>
+    <div class="star" style="left: 5.75912vw; top: 36.9225vh; animation-duration: 4.80047s;"></div>
+    <div class="star" style="left: 98.2347vw; top: 92.5614vh; animation-duration: 4.59458s;"></div>
+    <div class="star" style="left: 69.1963vw; top: 54.9075vh; animation-duration: 6.75649s;"></div>
+    <div class="star" style="left: 35.3094vw; top: 56.3605vh; animation-duration: 3.22818s;"></div>
+    <div class="star" style="left: 22.9395vw; top: 19.1126vh; animation-duration: 6.76483s;"></div>
+    <div class="star" style="left: 59.2594vw; top: 92.5422vh; animation-duration: 6.74756s;"></div>
+    <div class="star" style="left: 95.6816vw; top: 99.1175vh; animation-duration: 4.49094s;"></div>
+    <div class="star" style="left: 88.7339vw; top: 23.7232vh; animation-duration: 6.04201s;"></div>
+    <div class="star" style="left: 92.4454vw; top: 13.7632vh; animation-duration: 6.24127s;"></div>
+    <div class="star" style="left: 32.2031vw; top: 49.2825vh; animation-duration: 4.41623s;"></div>
+    <div class="star" style="left: 21.9876vw; top: 62.7255vh; animation-duration: 4.11732s;"></div>
+    <div class="star" style="left: 21.248vw; top: 31.9164vh; animation-duration: 3.00908s;"></div>
+    <div class="star" style="left: 53.4266vw; top: 92.8403vh; animation-duration: 4.83332s;"></div>
+    <div class="star" style="left: 22.5386vw; top: 96.8622vh; animation-duration: 6.07457s;"></div>
+    <div class="star" style="left: 11.7648vw; top: 24.8775vh; animation-duration: 6.30275s;"></div>
+    <div class="star" style="left: 38.1891vw; top: 72.7287vh; animation-duration: 5.5917s;"></div>
+</div>
+
+  <div class="wrap">
+    <header>Tweet Generator</header>
+
+    <div class="panel">
+      <p class="note">Isi form lalu klik <strong>Generate</strong>. Setelah download, halaman otomatis reset.</p>
+
+      <form id="form">
+        <div class="field">
+          <label for="profile">Foto profil (opsional)</label>
+          <input id="profile" type="text" placeholder="URL gambar profil">
+        </div>
+        <div class="field">
+          <label for="name">Nama tampilan</label>
+          <input id="name" type="text" placeholder="Contoh: Hzzny" required="">
+        </div>
+        <div class="field">
+          <label for="username">Username</label>
+          <input id="username" type="text" placeholder="Contoh: Hzzny_x (tanpa @)" required="">
+        </div>
+        <div class="field">
+          <label for="tweet">Isi tweet</label>
+          <textarea id="tweet" placeholder="Masukkan kata-katamu" required=""></textarea>
+        </div>
+        <div class="row">
+          <div class="field">
+            <label for="retweets">Retweets</label>
+            <input id="retweets" type="number" value="1000" min="0">
+          </div>
+          <div class="field">
+            <label for="likes">Likes</label>
+            <input id="likes" type="number" value="5000" min="0">
+          </div>
+        </div>
+        <div style="display:flex;gap:12px;margin-top:20px">
+          <button class="btn" type="submit">Generate</button>
+          <button class="btn secondary" type="button" id="resetBtn">Reset</button>
+        </div>
+      </form>
+
+      <div id="result" class="result"></div>
+    </div>
+
+    <footer>© Hzzny</footer>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
