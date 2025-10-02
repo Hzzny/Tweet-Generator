@@ -1,4 +1,3 @@
-    // stars
     const starContainer = document.getElementById("stars");
     for (let i = 0; i < 35; i++) {
       const s = document.createElement("div");
@@ -32,8 +31,7 @@
 
       showLoading();
       try {
-        // Mengubah URL fetch ke endpoint Vercel lokal
-        const res = await fetch("/api/tweet", {
+        const res = await fetch("/api/tweet.js", {
           method: "POST", headers: { "content-type": "application/json" },
           body: JSON.stringify({
             profile: profile || null, name, username, tweet,
@@ -56,4 +54,5 @@
         result.querySelector(".download").onclick = () => setTimeout(() => location.reload(), 800);
       } catch (err) { showError("Error jaringan: " + err.message); }
     }
+
   
